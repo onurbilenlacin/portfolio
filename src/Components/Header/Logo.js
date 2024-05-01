@@ -4,7 +4,7 @@ export const Logo = () => {
     return (
         <div className="">
             <img
-                className=""
+                className=" "
                 src={process.env.PUBLIC_URL + "/assets/icons/Logo.svg"}
                 alt=""
             />
