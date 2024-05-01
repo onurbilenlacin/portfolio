@@ -1,5 +1,5 @@
 import React from "react";
-import { SuperHeader, Header } from "../Components";
+import { SuperHeader, Header, Hero } from "../Components";
 
 const Home = () => {
     return (
@@ -7,7 +7,7 @@ const Home = () => {
             <SuperHeader />
             <div className="hero-bg">
                 <Header />
-                {/* <Hero /> */}
+                <Hero />
             </div>
         </div>
     );
