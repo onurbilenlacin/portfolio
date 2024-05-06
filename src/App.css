@@ -6,7 +6,7 @@
 
 * {
     margin: 0;
-    line-height: calc(2px + 1em + 2px) !important;
+    /* line-height: calc(2px + 1em + 2px) !important; */
 }
 
 html,
@@ -39,4 +39,89 @@ h6 {
 #root,
 #__next {
     isolation: isolate;
+}
+
+.hero-bg {
+    position: absolute;
+    width: 100%;
+
+    left: 0px;
+    padding-bottom: 48px;
+    background: linear-gradient(
+        81deg,
+        #e7f0ff 9.01%,
+        rgba(232, 241, 255, 0.47) 89.11%
+    );
+}
+
+.hamburger,
+.close {
+    filter: invert(51%) sepia(14%) saturate(645%) hue-rotate(167deg)
+        brightness(94%) contrast(89%);
+}
+
+.health-care-finder {
+    box-shadow: 6px 6px 35px rgba(16, 40, 81, 0.11);
+}
+
+.hero-swiper .swiper-pagination-horizontal {
+    bottom: 150px !important;
+}
+
+@media (max-width: 768px) {
+    .hero-swiper .swiper-pagination-horizontal {
+        bottom: 50px !important;
+    }
+}
+
+.health-adds {
+    padding-bottom: 93px !important;
+}
+
+.health-adds .swiper-pagination-horizontal {
+    bottom: 37px !important;
+}
+
+.team-swiper .swiper-wrapper {
+    padding-bottom: 118px !important;
+}
+.team-swiper .swiper-pagination-horizontal {
+    bottom: 45px !important;
+}
+
+.health-care-types {
+    position: relative;
+    top: -7.5rem;
+}
+
+.team-member {
+    background: #ffffff;
+    box-shadow: 0px 15px 55px -10px rgba(0, 0, 0, 0.09);
+    border-radius: 250px 250px 4px 4px;
+    padding: 4px;
+    width: 370px;
+    height: 415px;
+}
+
+.team-member .image-wrapper {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(144.2deg, #e1f3ff 0%, #2aa7ff 100%);
+    border-radius: 250px 250px 8px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.team-member .image-wrapper img {
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+}
+
+.news-article {
+    display: grid;
+    grid-template-columns: repeat(3, 363px) !important;
+    gap: 24px;
+    justify-content: center;
 }
